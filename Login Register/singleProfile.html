@@ -1,0 +1,502 @@
+<html>
+
+<head>
+  <title>Mech Serv</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./user.css" />
+  <link rel="stylesheet" href="./repair.css">
+  <link rel="website icon" type="png" href="Images/ms_logo-removebg-preview.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="contact-info">
+      <p> Mech Serv</p>
+    </div>
+
+    <nav class="navbar">
+
+      <a href="#" class="logo">
+        <img class="logo" src="./images/ms_logo-removebg-preview.png" alt="">
+      </a>
+
+      <div class="links">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#team">team</a>
+        <a href="#reviews">reviews</a>
+        <a href="#contact">contact</a>
+      </div>
+
+
+      <div style=" position: relative; padding: 10px;">
+        <i style="color: #2597f4; font-size: 20px;" class="fa-solid fa-cart-shopping"></i>
+        <p style="position: absolute; top: 10%; color: black; left: 50%; font-size: 10px; font-weight: bold; font-family: cursive;"
+          class="p-cart">0</p>
+      </div>
+
+      <div id="menu-btn" class="fa fa-bars">
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- home section starts  -->
+
+  <section class="home" id="home">
+
+    <div class="image">
+      <img src="images/home-img.svg" alt="">
+    </div>
+
+    <div class="content">
+      <h3>Why fix it yourself? Leave it to the pros.</h3>
+      <p>Mech Serv is a leading multiple service provider company catering to your 360 needs with quality guaranteed.
+
+        The aim and priority of Mech Serv are to add value to our consumers' lives by providing smart solutions to all
+        their problems.</p>
+      <a href="#about" class="btn">get started</a>
+    </div>
+
+  </section>
+
+  <!-- home section ends -->
+
+  <!-- fun fact section starts  -->
+
+  <section class="fun-fact">
+
+    <div class="box">
+      <img src="images/fun-fact-icon-1.svg" alt="">
+      <div class="info">
+        <h3>2890</h3>
+        <p>Repairs Done</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="images/fun-fact-icon-2.svg" alt="">
+      <div class="info">
+        <h3>25</h3>
+        <p>Awards Won</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="images/fun-fact-icon-3.svg" alt="">
+      <div class="info">
+        <h3>3585</h3>
+        <p>Happy Clients</p>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- fun fact section ends -->
+
+  <!-- about section starts  -->
+
+  <section class="about" id="about">
+
+    <div class="content">
+      <h3>best quality Repair services</h3>
+      <p> Our pride is providing the most extensive range of services. From home maintenance to personal assistance. We
+        make sure that your safety is never compromised. This is why we hire all the staff under the roof of Mech Serv,
+        just for your satisfaction</p>
+      <a href="#services" class="btn">read more</a>
+    </div>
+
+    <div class="image">
+      <img src="images/about-img.svg" alt="">
+    </div>
+
+  </section>
+
+  <!-- about section ends -->
+
+  <!-- services section starts  -->
+
+  <section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="./images/electrician.png" alt="">
+        <a href="./desc.html">
+          <h1>Electrical Services</h1>
+        </a>
+        <p>In need of Emergency searching for a Reliable Expert Electrician is even more difficult. Mech Serv in-house expert here to serve.</p>
+        <div class="parent-like">
+          <p class="charges">Charges 2000 Rs</p>
+          <i id="icon1" class="fa-regular fa-heart icon sep" onclick="toggleIcon('icon1')"></i>
+        </div>
+
+      </div>
+
+      <div class="box">
+        <img src="images/plumber.png" alt="">
+        <a href="./desc.html">
+          <h1>Plumber</h1>
+        </a>
+        <p>Mech Serv expert plumber can handle all your house issues with your satisfaction. Confirm your booking.</p>
+        <div class="parent-like">
+          <p class="charges">Charges 2000 Rs</p>
+          <i id="icon2" class="fa-regular fa-heart icon sep" onclick="toggleIcon('icon2')"></i>
+        </div>
+
+      </div>
+
+      <div class="box">
+        <img src="images/carpanter.png" alt="">
+        <a href="./desc.html">
+          <h1>Carpenter</h1>
+        </a>
+    <p>Mech Serv is providing you the proficient and expert carpenter to make your house a modern antique aesthetic living look.</p>
+        <div class="parent-like">
+          <p class="charges">Charges 2000 Rs</p>
+          <i id="icon3" class="fa-regular fa-heart icon sep" onclick="toggleIcon('icon3')"></i>
+        </div>
+
+      </div>
+
+      <div class="box">
+        <img src="images/painter.png" alt="">
+        <a href="./desc.html">
+          <h1>Paint Services</h1>
+        </a>
+        <p>Mech Serv is leading the future with its top notch painters. Paint will bring your house look a clean minimal look.</p>
+        <div class="parent-like">
+          <p class="charges">Charges 2000 Rs</p>
+          <i id="icon4" class="fa-regular fa-heart icon sep" onclick="toggleIcon('icon4')"></i>
+        </div>
+
+      </div>
+
+      <div class="box">
+        <img style="border: 1px solid; border-radius: 50%;" src="images/Appliances.png" alt="">
+        <a href="./desc.html">
+          <h1>Appliances Repair</h1>
+        </a>
+        <p>In case of emergecy Mech Serv will help you to repair your appliances within your need. Mech serv deals in all appliances.</p>
+        <div class="parent-like">
+          <p class="charges">Charges 2000 Rs</p>
+          <i id="icon5" class="fa-regular fa-heart icon sep" onclick="toggleIcon('icon5')"></i>
+        </div>
+
+      </div>
+
+      <div class="box">
+        <img src="images/cleaning.png" alt="">
+        <a href="./desc.html">
+          <h1>Cleaning Services</h1>
+        </a>
+        <p>Mec Serv providing you the Cleaning services for room, shop and all of your demands. It will provide you Great Services. </p>
+        <div class="parent-like">
+          <p class="charges">Charges 2000 Rs</p>
+          <i id="icon6" class="fa-regular fa-heart icon sep" onclick="toggleIcon('icon6')"></i>
+        </div>
+
+      </div>
+
+      <div id="favoritesPopup">
+        <h2>Favourite List</h2>
+        <p id="favoritesMessage"></p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- services section ends -->
+
+  <!-- gallery section starts  -->
+
+  <section class="gallery" id="gallery">
+
+    <h1 class="heading"> our <span>gallery</span> </h1>
+
+    <div class="gallery-container">
+
+      <a class="box" href="images/abc.jpg"><img src="images/abc.jpg" alt=""></a>
+      <a class="box" href="images/483717698ConstructionLaborer.jpg"><img src="./images/483717698ConstructionLaborer.jpg"
+          alt=""></a>
+      <a class="box" href="images/Home-cleaning-companies-in-RAK-Cover-28-05.jpg"><img
+          src="images/Home-cleaning-companies-in-RAK-Cover-28-05.jpg" alt=""></a>
+      <a class="box" href="images/What-Can-I-Do-as-an-Electrician.jpg"><img
+          src="./images/What-Can-I-Do-as-an-Electrician.jpg" alt=""></a>
+      <a class="box" href="images/most-common-appliance-problems.jpg"><img
+          src="./images/most-common-appliance-problems.jpg" alt=""></a>
+      <a class="box" href="images/d854837a96ca2f43dbf8206fa6f70f54.jpg"><img
+          src="images/d854837a96ca2f43dbf8206fa6f70f54.jpg" alt=""></a>
+
+    </div>
+
+  </section>
+
+  <!-- gallery section ends -->
+
+  <!-- facilities section starts  -->
+
+  <section class="facilities">
+
+    <h1 class="heading"> why <span>choose us?</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="images/why-choose-icon-1.svg" alt="">
+        <h3>24/7 support</h3>
+        <p>Mech Serv is a value addition which covers all 360 services under one platform. Our motive is to provide best services to our corporate, commercial, and residential customers.</p>
+      </div>
+
+      <div class="box">
+        <img src="images/why-choose-icon-2.svg" alt="">
+        <h3>quality service</h3>
+        <p>Mech Serv is a value addition which covers all 360 services under one platform. Our motive is to provide best services to our corporate, commercial, and residential customers.</p>
+      </div>
+
+      <div class="box">
+        <img src="images/why-choose-icon-3.svg" alt="">
+        <h3>quick repair</h3>
+        <p>Mech Serv is a value addition which covers all 360 services under one platform. Our motive is to provide best services to our corporate, commercial, and residential customers.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- facilities section ends -->
+
+  <!-- team section starts  -->
+
+  <section class="team" id="team">
+
+    <h1 class="heading"> our expert <span>team</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="images/team-1.jpg" alt="">
+        <div class="content">
+          <h3>john deo</h3>
+          <p>Electrical Engineer</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/team-2.jpg" alt="">
+        <div class="content">
+          <h3>Smith Chrey</h3>
+          <p>Plumber</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/team-3.jpg" alt="">
+        <div class="content">
+          <h3>Leith Henry</h3>
+          <p>Carpeneter</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- team section ends -->
+
+  <!-- reviews section starts  -->
+
+  <section class="reviews" id="reviews">
+
+    <h1 class="heading"> clients <span>reviews</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="text">
+          <i class="fas fa-quote-right"></i>
+          <p>I am satisfied with your work and will recommend your page in good reviews for your Mech Serv team doing reliable work</p>
+        </div>
+        <div class="user">
+          <img src="images/pic-1.png" alt="">
+          <h3>Akbar Ali</h3>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="text">
+          <i class="fas fa-quote-right"></i>
+          <p>Mech Serv Team has performed his duties very efficiently. They are honest and very hardworking. I higly recomend you.</p>
+        </div>
+        <div class="user">
+          <img src="images/pic-2.png" alt="">
+          <h3>Shahida Iqbal</h3>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="text">
+          <i class="fas fa-quote-right"></i>
+          <p>Satisfied with the work but work with respect to amount is also moderate. I am very happy with their Work.</p>
+        </div>
+        <div class="user">
+          <img src="images/pic-3.png" alt="">
+          <h3>Sultan Abbas</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- reviews section ends -->
+
+  <!-- contact section starts  -->
+
+  <section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89592087332!2d72.8319697277345!3d19.14167056419224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sLahore%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1641269162899!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy"></iframe>
+
+      <form action="">
+        <h3>get in touch</h3>
+        <div class="inputBox">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="inputBox">
+          <input type="number" placeholder="Phone">
+          <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- contact section ends -->
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a class="link" href="#home"> <i class="fas fa-angle-right"></i> Home</a>
+        <a class="link" href="#about"> <i class="fas fa-angle-right"></i> About</a>
+        <a class="link" href="#services"> <i class="fas fa-angle-right"></i> Services</a>
+        <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> Gallery</a>
+        <a class="link" href="#team"> <i class="fas fa-angle-right"></i> Team</a>
+        <a class="link" href="#reviews"> <i class="fas fa-angle-right"></i> Reviews</a>
+        <a class="link" href="#contact"> <i class="fas fa-angle-right"></i> Contact</a>
+      </div>
+
+
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#" class="link"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+        <a href="#" class="link"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+        <a href="#" class="link"> <i class="fas fa-envelope"></i> abc@gmail.com </a>
+        <a href="#" class="link"> <i class="fas fa-map"></i>Lahore, Pakistan - 400104 </a>
+      </div>
+
+      <div class="box">
+        <h3>newsletter</h3>
+        <p>Subscribe for latest updates</p>
+        <form action="">
+          <input type="submit" value="subscribe" class="btn">
+        </form>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="credit">All rights reserved 2023 </div>
+
+  </section>
+
+  <!-- footer section ends -->
+
+
+
+  <button class="shadow__btn" onclick="Logout();">signout</button>
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="./repair.js"></script>
+
+
+
+
+</html>
